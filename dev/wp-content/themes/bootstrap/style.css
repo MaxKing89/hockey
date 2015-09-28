@@ -1,0 +1,318 @@
+/*
+Theme Name: Bootstrap
+Theme URI: http://wptreehouse.com/from-bootstrap-to-wordpress
+Author: Max King
+Author URI: 
+Description: Bootstrap Theme
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bootstrap-to-wp
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.admin-bar .navbar-fixed-top {
+    margin-top: 30px;
+}
+
+@media (min-width:768px) {
+	.sub-menu {
+		display: none;
+		position: absolute;
+		background: #222;
+		padding: 10px 15px;
+		width: 200px;		
+	}
+
+	li:hover .sub-menu {
+		display: block;
+	}
+
+}
+
+.sub-menu li {
+	margin-bottom: 10px;
+	list-style: none;
+}
+
+.sub-menu li:last-child {
+	margin-bottom: 0;
+}
+
+.sub-menu a  {
+	color: #999;
+	text-decoration: none;
+}
+
+.sub-menu a:hover  {
+	color: #fff;	
+}	
+
+.current-menu-item > a, .current-menu-parent > a {
+	background: #000;	
+}
+.current-menu-parent li a {
+	background: inherit;
+}
+.current-menu-parent .current-menu-item a {
+	color: #fff;
+	font-weight: bold;
+}
+
+
+.sidebar {
+    margin-top: 40px;
+    color: #444;
+}
+
+.sidebar h3 {
+    color: #888;
+}
+
+.widget {
+    margin: 10px 0 30px;
+}
+
+article.post {
+    margin: 20px 0 40px;
+}
+
+.featured-image img,
+.portfolio-piece img,
+.portfolio-image img,
+.shopping img,
+.shopping-image img {
+    max-width: 100%;   
+}
+
+.prev-next {
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: right;
+}
+
+@media (max-width:540px) {
+    .portfolio-piece h4,
+    .shopping h4{
+        font-size: .8em;   
+    }
+    .prev-next {
+        margin-top: 15px;
+        font-size: 18px;   
+    }
+}
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+}
+
+.shopping h4 {
+    text-align: center;
+
+}
+
+.shopping img {
+    margin-top: 25px;
+}
+
+.responsive-img img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 0;
+}
+
+
+.review h4
+.review p {
+    text-align: left;
+}
+
+.review p {
+ font-size: 1.2em;   
+}
+
+.btn-footer {
+    float: right;
+    display: inline-block;
+   
+}
+
+.btn-primary {
+     background: #000000;
+}
+
+.btn-primary:hover {
+    background: #00529c;
+}
+
+
+.img-container {
+    height: 350px;
+    width: 350px;
+}
+
+.img-container img{
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.featured-image-shelf img {
+    max-height: 600px;
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.team-head h1 {
+    text-align: center;
+    margin-top: -40px;
+    padding-top: 10px;
+}
+
+.team-head h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.day-container {
+    border-style: solid;
+    border-color: #b22222;
+    background: #00529c;
+    width: 13%;
+    display: inline-block;
+}
+
+.day-container h3, 
+.day-container h4{
+    text-align: center;
+    color: #d6d5c6;
+}
+
+/******************************************** IDS***************************************/
+
+#price {
+  color: #b22222;  
+}
+
+#product-title a {
+    color: black
+        
+}
+
+#home-hero {
+    max-height: 600px;
+    max-width: 610px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#product-name h4,
+#product-name p {
+    display: inline;
+}
+
+#brand h4,
+#brand p {
+    display: inline;
+}
+
+#category h4,
+#category p {
+    display: inline;
+}
+
+#description h4,
+#description p {
+    display: inline;
+}
+
+#price h4,
+#price p {
+    display: inline;
+}
+
+#score h4,
+#score p {
+    display: inline;
+}
+
+#video-review h4,
+#video-review p {
+    display: inline;
+}
+
+#img-review h4,
+#img-review p {
+    display: inline;
+}
+
+#link-review h4,
+#link-review p {
+    display: inline;
+}
+
+
+
+
+

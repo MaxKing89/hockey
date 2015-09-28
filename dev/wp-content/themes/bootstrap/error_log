@@ -1,0 +1,3 @@
+[11-Sep-2015 12:08:12] PHP Fatal error:  Call to undefined function  get_header() in /home2/kmtspart/public_html/dev/wp-content/themes/bootstrap/process_form_review.php on line 8
+[11-Sep-2015 12:16:23] PHP Fatal error:  Call to undefined function  get_header() in /home2/kmtspart/public_html/dev/wp-content/themes/bootstrap/process_form_review.php on line 8
+[11-Sep-2015 12:16:52] PHP Fatal error:  Call to undefined function  get_header() in /home2/kmtspart/public_html/dev/wp-content/themes/bootstrap/process_form_review.php on line 8
