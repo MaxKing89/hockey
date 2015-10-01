@@ -248,6 +248,63 @@ article.post {
     color: #d6d5c6;
 }
 
+.print-link {
+padding:8px 20px;
+line-height:1em;
+background-color: #005288;
+color: #FFF;
+font-size: 14px;
+font-family:"Lucida Grande", 'LucidaSansRegular', Arial, Helvetica, sans-serif !important;
+border-radius: 3px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+text-shadow: 1px 1px 1px #111;
+box-shadow: 1px 1px 1.2px #555555;
+-moz-box-shadow: 1px 1px 1.2px #555555;
+-webkit-box-shadow: 1px 1px 1.2px #555555;
+transition: all 0.5s ease 0s;
+-moz-transition: all 0.5s ease 0s;
+-webkit-transition: all 0.5s ease 0s;
+-ms-transition: all 0.5s ease 0s;
+-0-transition: all 0.5s ease 0s;
+}
+.print-link:hover {
+background-color: #C60;
+color: #FFF;
+text-decoration:none;
+}
+
+.submit-workout {
+    display: block;
+    float: right;
+}
+
+.my-workouts-container {
+    outline: 1px solid;
+}
+
+.my-workouts-container h1 {
+    text-align: center;
+    
+}
+
+.my-workouts-container h3 {
+    text-align: center;
+    
+}
+
+.cart-contents:before{
+    font-family:WooCommerce;
+    content: "\e01d";
+    font-size:28px;
+    margin-top:10px;
+    font-style:normal;
+    font-weight:400;
+    padding-right:5px;
+    vertical-align: bottom;
+}
+.cart-contents:hover {text-decoration: none}
+
 /******************************************** IDS***************************************/
 
 #price {
