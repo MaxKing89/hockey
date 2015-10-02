@@ -30,7 +30,7 @@
         
     </div>
       
-          <?php //get_sidebar( 'product-review' ); ?>
+          <?php get_sidebar( 'product-review' ); ?>
         <?php get_search_form('my_search_form'); ?>
       
   </div>
