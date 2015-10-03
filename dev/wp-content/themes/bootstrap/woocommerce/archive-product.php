@@ -1,4 +1,10 @@
 <?php
+/*
+    Template Name: Woocommerce Shop
+*/
+?>
+
+<?php
 /**
  * The Template for displaying product archives, including the main shop page which is a post type archive.
  *
@@ -27,9 +33,9 @@ get_header( 'shop' ); ?>
 	?>
 
 		<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-
+         <div container>
 			<h1 class="page-title"><?php woocommerce_page_title(); ?></h1>
-
+             
 		<?php endif; ?>
 
 		<?php
@@ -100,4 +106,4 @@ get_header( 'shop' ); ?>
 	?>
 
 <?php get_footer( 'shop' ); ?>
-
+</div>

@@ -87,3 +87,6 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
+
+//Increase PHP memory to 64M
+define( 'WP_MEMORY_LIMIT', '64M' );

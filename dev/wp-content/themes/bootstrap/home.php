@@ -6,7 +6,7 @@
       <div class="col-md-9">
 
         <div class="page-header">
-          <h1><?php wp_title(''); ?></h1>
+          <h1><?php wp_title(''); ?> </h1>
         </div>
 
 
@@ -14,7 +14,6 @@
 
           $args = array(
             'post_type'     => 'post',
-            'category_name' => 'featured'
           );
           $the_query = new WP_Query( $args );
 
@@ -34,6 +33,7 @@
 
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
+      
 
             <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 

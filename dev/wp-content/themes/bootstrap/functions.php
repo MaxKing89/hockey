@@ -24,6 +24,8 @@ function theme_js() {
 
 }
 add_action( 'wp_enqueue_scripts', 'theme_js' );
+add_action( 'wp_enqueue_scripts', 'bootstrap_js' );
+
 
 //add_filter( 'show_admin_bar', '__return_false' );
 
@@ -66,6 +68,8 @@ create_widget( 'Search Sidebar', 'product-review', 'Displays on the top of pages
 
 
 //WooCommerce-------------------------------------------------
+
+/*
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
 remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
 
@@ -88,12 +92,12 @@ add_action( 'after_setup_theme', 'woocommerce_support' );
 function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
-
+*/
 //WOOO COMMERCE CART CODE
 /**
  * Ensure cart contents update when products are added to the cart via AJAX
  */
-function my_header_add_to_cart_fragment( $fragments ) {
+/*function my_header_add_to_cart_fragment( $fragments ) {
  
     ob_start();
     $count = WC()->cart->cart_contents_count;
@@ -105,14 +109,25 @@ function my_header_add_to_cart_fragment( $fragments ) {
 }
 add_filter( 'woocommerce_add_to_cart_fragments', 'my_header_add_to_cart_fragment' );
 
-
+*/
 //END WOOO COMMERCE CART CODE
 
+//Remove Woocommerce sidebar
+/*
+if ( ! is_woocommerce() ) { get_sidebar(); }
+remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar');
+
+//Set Columns
+function set_columns($columns){
+return 4;
+}
+add_filter('loop_shop_columns','set_columns');
+*/
 //End Woocommerce------------------------------------------------------
 
 
 //Custom Search-------------------------------------------------------
-
+/*
 add_filter('posts_join', 'product_reivew_search_join' );
 add_filter('posts_where', 'product_review_search_where' );
 add_filter('posts_groupby', 'product_review_search_groupby' );
@@ -187,7 +202,7 @@ function my_search_form( $form ) {
 add_filter( 'get_search_form', 'my_search_form' );
 
 //End Custom Search Form-----------------------------------------------
-
+*/
 // [print_button]
 function print_button_shortcode( $atts ){
 return '<a href="javascript:window.print()" class="print-link">Print This Page</a>';
