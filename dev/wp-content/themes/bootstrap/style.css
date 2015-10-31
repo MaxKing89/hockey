@@ -395,6 +395,19 @@ text-decoration:none;
     clear:both;
 }
 
+.pagination a.selected {
+    font-weight: bold;
+}
+
+.clear {
+    clear: both;
+}
+
+.pagination {
+    text-align: center;
+    width:100%;
+}
+
 
 /*************************************End Gear Review********************************************************/
 
