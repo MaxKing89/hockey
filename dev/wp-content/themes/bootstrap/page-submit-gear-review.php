@@ -66,6 +66,7 @@ get_header();
         <div class="form-group">
         <label for="category" class="col-sm-2 control-label">Category</label>
         <div class="col-sm-10">
+            
             <select class="form-control" id="category" name="category">
               <option value="cages_visors">Cages and Visors</option>
               <option value="elbow_pads">Elbow Pads</option>
@@ -76,7 +77,7 @@ get_header();
               <option value="shin_pad">Shin Pads</option>
               <option value="shoulder_pads">Shoulder Pads</option>
               <option value="skates">Skates</option>
-              <option value="sticks">Sticks</option>
+              <option selected="selected" value="sticks">Sticks</option>
               <option value="other">Other</option>
             </select>
         </div>
