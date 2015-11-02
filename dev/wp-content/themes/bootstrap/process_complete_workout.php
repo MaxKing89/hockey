@@ -24,14 +24,14 @@ $current_username = $current_user->user_login;
     //echo 'User display name: ' . $current_user->display_name . '<br />';
     //echo 'User ID: ' . $current_user->ID . '<br />';w
 
-if(isset($_POST['weight1'])) $weight1=$_POST["weight1"]; 
-if(isset($_POST['weight2'])) $weight2=$_POST["weight2"];
-if(isset($_POST['weight3'])) $weight3=$_POST["weight3"]; 
-if(isset($_POST['weight4'])) $weight4=$_POST["weight4"]; 
-if(isset($_POST['weight5'])) $weight5=$_POST["weight5"]; 
-if(isset($_POST['weight6'])) $weight6=$_POST["weight6"]; 
-if(isset($_POST['weight7'])) $weight7=$_POST["weight7"]; 
-if(isset($_POST['weight8'])) $weight8=$_POST["weight8"];
+if(isset($_POST['weight1'])) $weight1=sanitize_text_field($_POST["weight1"]); 
+if(isset($_POST['weight2'])) $weight2=sanitize_text_field($_POST["weight2"]);
+if(isset($_POST['weight3'])) $weight3=sanitize_text_field($_POST["weight3"]); 
+if(isset($_POST['weight4'])) $weight4=sanitize_text_field($_POST["weight4"]); 
+if(isset($_POST['weight5'])) $weight5=sanitize_text_field($_POST["weight5"]); 
+if(isset($_POST['weight6'])) $weight6=sanitize_text_field($_POST["weight6"]); 
+if(isset($_POST['weight7'])) $weight7=sanitize_text_field($_POST["weight7"]); 
+if(isset($_POST['weight8'])) $weight8=sanitize_text_field($_POST["weight8"]);
 if(isset($_POST['lift-id'])) $lift_id=$_POST["lift-id"];
 if(isset($_POST['workout-title'])) $workout_title=$_POST["workout-title"];
 if(isset($_POST['date-completed'])) $date_completed=$_POST["date-completed"];

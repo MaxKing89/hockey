@@ -40,11 +40,13 @@
            global $wpdb;
 
                 $search= $_GET['search'];
-
+                
                 if (isset($search)) 
-                 {                 
+                 {
+                    
+                $clean_search= sanitize_text_field($search);
                
-                $custom_reviews_sql= "SELECT * FROM hockey_review WHERE product_name LIKE " ."'%$search%' or brand LIKE " ."'%$search%' or category LIKE " ."'%$search%' LIMIT 30";
+                $custom_reviews_sql= "SELECT * FROM hockey_review WHERE product_name LIKE " ."'%$clean_search%' or brand LIKE " ."'%$clean_search%' or category LIKE " ."'%$clean_search%' LIMIT 30";
                 $custom_reviews_query = mysql_query($custom_reviews_sql) or die(mysql_error());
                 $custom_rsReviews = mysql_fetch_assoc($custom_reviews_query);
                 //$total_count_sql = "SELECT COUNT(*) FROM hockey_review WHERE product_name LIKE " ."'%$search%' or brand LIKE " ."'%$search%'";
@@ -54,7 +56,7 @@
 
 
                 //total score
-                $review_score_sum_sql= "SELECT SUM(score) AS value_sum FROM hockey_review WHERE product_name LIKE " ."'%$search%' or brand LIKE " ."'%$search%' or category LIKE " ."'%$search%'";
+                $review_score_sum_sql= "SELECT SUM(score) AS value_sum FROM hockey_review WHERE product_name LIKE " ."'%$clean_search%' or brand LIKE " ."'%$clean_search%' or category LIKE " ."'%$clean_search%'";
                 $review_score_sum_query = mysql_query($review_score_sum_sql) or die(mysql_error());
                 $review_score_sum_result = mysql_fetch_assoc($review_score_sum_query);
                 $sum= $review_score_sum_result['value_sum'];

@@ -28,14 +28,10 @@ $productName=sanitize_text_field($_POST["productName"]);
 $brand=sanitize_text_field($_POST["brand"]);
 $category=sanitize_text_field($_POST["category"]); 
 $form_description=sanitize_text_field($_POST["form_description"]); 
-$price=$_POST["price"]; 
-if (!is_numeric($price)) {
-    $price= ''; 
-}
-$score=$_POST["score"];
-if (!is_numeric($score)) {
-    $score= ''; 
-}
+$price=sanitize_text_field($_POST["price"]); 
+
+$score=sanitize_text_field($_POST["score"]);
+
 $upload_image=sanitize_file_name($_POST["upload_image"]); 
 $linkToBuy=esc_url($_POST["linkToBuy"]);
 
