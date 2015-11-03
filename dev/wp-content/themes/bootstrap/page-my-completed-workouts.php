@@ -48,25 +48,25 @@
             <div class="row my-workouts-container">
                
                     <div class="workout-header col-sm-12 col-md-12">
-                     <?php if (isset($rs_my_workouts['workout_title'])) { ?>
+                     <?php if (!empty($rs_my_workouts['workout_title'])) { ?>
 
                          <h1><?php echo $rs_my_workouts['workout_title']; ?></h1>
 
                     <?php } ?>
-                    <?php if (isset($rs_my_workouts['muscle_group'])) { ?>
+                    <?php if (!empty($rs_my_workouts['muscle_group'])) { ?>
 
                          <h3>Muscle Group: <?php echo $rs_my_workouts['muscle_group']; ?></h3>
 
                     <?php } ?>
 
-                    <?php if (isset($rs_my_workouts['date_completed'])) { ?>
+                    <?php if (!empty($rs_my_workouts['date_completed'])) { ?>
 
                          <h3>Date Completed: <?php echo $rs_my_workouts['date_completed']; ?></h3>
 
                     <?php } ?>
 
                     
-                    <?php if (isset($rs_my_workouts['day'])) { ?>
+                    <?php if (!empty($rs_my_workouts['day'])) { ?>
                     
                         <div class="completed-day-container col-sm-6">
 
@@ -74,7 +74,7 @@
                     </div>
                     <?php } ?>
 
-                    <?php if (isset($rs_my_workouts['week'])) { ?>
+                    <?php if (!empty($rs_my_workouts['week'])) { ?>
                         <div class="completed-week-container col-sm-6">
                          <h3>Week: <?php echo $rs_my_workouts['week']; ?></h3>
                         </div>
@@ -84,85 +84,62 @@
                         
                     <div class="all-exercise-container col-sm-12">
                     
-                    <?php if (isset($rs_my_workouts['exercise1'])) { ?>
+                    <?php if (!empty($rs_my_workouts['exercise1'])) { ?>
                         
                     <div class="individual-exercise-container col-sm-4">
 
                          <h4>Exercise: <?php echo $rs_my_workouts['exercise1']; ?></h4>
 
-                    <?php } ?>
-                    <?php if (isset($rs_my_workouts['weight1'])) { ?>
-
                          <h4>Weight: <?php echo $rs_my_workouts['weight1']; ?></h4>
                     </div><!---------------------End individual exercise container---------------------------->
                     <?php } ?>
-                    <?php if (isset($rs_my_workouts['exercise2'])) { ?>
+                    <?php if (!empty($rs_my_workouts['exercise2'])) { ?>
                         <div class="individual-exercise-container col-sm-4">
                          <h4>Exercise: <?php echo $rs_my_workouts['exercise2']; ?></h4>
-
-                    <?php } ?>
-                    <?php if (isset($rs_my_workouts['weight2'])) { ?>
 
                          <h4><?php echo $rs_my_workouts['weight2']; ?></h4>
                     </div><!---------------------End individual exercise container---------------------------->
                     <?php } ?>
-                    <?php if (isset($rs_my_workouts['exercise3'])) { ?>
+                    <?php if (!empty($rs_my_workouts['exercise3'])) { ?>
                     <div class="individual-exercise-container col-sm-4">
                     
                          <h4>Exercise: <?php echo $rs_my_workouts['exercise3']; ?></h4>
 
-                    <?php } ?>
-                    <?php if (isset($rs_my_workouts['weight3'])) { ?>
-
                          <h4>Weight: <?php echo $rs_my_workouts['weight3']; ?></h4>
                     </div><!---------------------End individual exercise container---------------------------->
                     <?php } ?>
-                     <?php if (isset($rs_my_workouts['exercise4'])) { ?>
+                     <?php if (!empty($rs_my_workouts['exercise4'])) { ?>
                         <div class="individual-exercise-container col-sm-4">
                          <h4>Exercise: <?php echo $rs_my_workouts['exercise4']; ?></h4>
-
-                    <?php } ?>
-                    <?php if (isset($rs_my_workouts['weight4'])) { ?>
 
                          <h4>Weight: <?php echo $rs_my_workouts['weight4']; ?></h4>
                     </div><!---------------------End individual exercise container---------------------------->
                     <?php } ?>
-                     <?php if (isset($rs_my_workouts['exercise5'])) { ?>
+                     <?php if (!empty($rs_my_workouts['exercise5'])) { ?>
                         <div class="individual-exercise-container col-sm-4">
                          <h4>Exercise: <?php echo $rs_my_workouts['exercise5']; ?></h4>
-
-                    <?php } ?>
-                    <?php if (isset($rs_my_workouts['weight5'])) { ?>
 
                          <h4>Weight: <?php echo $rs_my_workouts['weight5']; ?></h4>
                     </div><!---------------------End individual exercise container---------------------------->
                     <?php } ?>
-                     <?php if (isset($rs_my_workouts['exercise6'])) { ?>
+                     <?php if (!empty($rs_my_workouts['exercise6'])) { ?>
                         <div class="individual-exercise-container col-sm-4">
                          <h4>Exercise: <?php echo $rs_my_workouts['exercise6']; ?></h4>
 
-                    <?php } ?>
-                    <?php if (isset($rs_my_workouts['weight6'])) { ?>
 
                          <h4>Weight: <?php echo $rs_my_workouts['weight6']; ?></h4>
                     </div><!---------------------End individual exercise container---------------------------->
                     <?php } ?>
-                     <?php if (isset($rs_my_workouts['exercise7'])) { ?>
+                     <?php if (!empty($rs_my_workouts['exercise7'])) { ?>
                         <div class="individual-exercise-container col-sm-4">
                          <h4>Exercise: <?php echo $rs_my_workouts['exercise7']; ?></h4>
-
-                    <?php } ?>
-                    <?php if (isset($rs_my_workouts['weight7'])) { ?>
 
                          <h4>Weight: <?php echo $rs_my_workouts['weight7']; ?></h4>
                     </div><!---------------------End individual exercise container---------------------------->
                     <?php } ?>
-                     <?php if (isset($rs_my_workouts['exercise8'])) { ?>
+                     <?php if (!empty($rs_my_workouts['exercise8'])) { ?>
                         <div class="individual-exercise-container col-sm-4">
                          <h4>Exercise: <?php echo $rs_my_workouts['exercise8']; ?></h4>
-                        
-                    <?php } ?>
-                    <?php if (isset($rs_my_workouts['weight8'])) { ?>
 
                          <h4>Weight: <?php echo $rs_my_workouts['weight8']; ?></h4>
                             
