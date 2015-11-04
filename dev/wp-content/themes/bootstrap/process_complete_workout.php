@@ -61,7 +61,9 @@ $sql="INSERT INTO completed_workouts ( username, lift_id, workout_title, date_co
 $success = mysqli_query($con,$sql);
 
 if ($success == true) {
-    header("http://dev.herohockeyclub.com/workout-submission-success/");
+    //header("http://dev.herohockeyclub.com/workout-submission-success/");
+     echo "<script>window.location.href = 'http://dev.herohockeyclub.com/workout-submission-success/';</script>";
+   exit();
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($con);
 }

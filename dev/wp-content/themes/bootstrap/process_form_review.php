@@ -100,7 +100,10 @@ $sql="INSERT INTO hockey_review ( product_name, brand, category, form_descriptio
 $success = mysqli_query($con,$sql); 
 
 if ($success == true) {
-    header("http://dev.herohockeyclub.com/your-review-has-been-submitted/");
+     //header("http://dev.herohockeyclub.com/your-review-has-been-submitted/");
+    echo "<script>window.location.href = 'http://dev.herohockeyclub.com/your-review-has-been-submitted';</script>";
+   exit();
+    
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($con);
 }

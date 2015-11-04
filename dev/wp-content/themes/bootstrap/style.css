@@ -248,15 +248,12 @@ article.post {
 }
 
 .print-link {
-padding:8px 20px;
-line-height:1em;
+
 background-color: #005288;
 color: #FFF;
-font-size: 14px;
-font-family:"Lucida Grande", 'LucidaSansRegular', Arial, Helvetica, sans-serif !important;
-border-radius: 3px;
--moz-border-radius: 3px;
--webkit-border-radius: 3px;
+font-size: x-large;
+font-weight: bold;
+width: 30%;
 text-shadow: 1px 1px 1px #111;
 box-shadow: 1px 1px 1.2px #555555;
 -moz-box-shadow: 1px 1px 1.2px #555555;
@@ -268,7 +265,7 @@ transition: all 0.5s ease 0s;
 -0-transition: all 0.5s ease 0s;
 }
 .print-link:hover {
-background-color: #C60;
+background-color: gray;
 color: #FFF;
 text-decoration:none;
 }
@@ -438,6 +435,28 @@ button.btn.btn-default.gear-submit {
     width: 100%;
     font-weight: bold;
     font-size: x-large;
+}
+
+button.btn.btn-default.gear-submit:hover {
+background-color: gray;
+color: #B22222;
+text-decoration:none;
+}
+
+/*************************************Submit Completed Workout*******************************************************/
+
+button.btn.btn-default.submit-workout {
+    background-color: black;
+    color: gray;
+    width: 60%;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+button.btn.btn-default.submit-workout:hover {
+background-color: gray;
+color: #B22222;
+text-decoration:none;
 }
 
 /*************************************End Submit Gear Review********************************************************/

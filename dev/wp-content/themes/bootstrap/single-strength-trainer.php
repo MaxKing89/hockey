@@ -348,10 +348,16 @@
                 
                 <?php } while ($rs_workout_day = mysql_fetch_assoc($workout_day_query)) ?>
       
-           
+           <div class="row">
             <button type="submit" class="btn btn-default submit-workout">Complete Workout</button>
+        
+            <?php echo do_shortcode('[print_button]'); ?>
+            <?php get_footer(); ?>
+               
+            </div>
+        
         </form>
 
-        <?php echo do_shortcode('[print_button]'); ?>
-            <?php get_footer(); ?>
+        
+        
       </div>  

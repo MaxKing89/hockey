@@ -205,7 +205,7 @@ add_filter( 'get_search_form', 'my_search_form' );
 */
 // [print_button]
 function print_button_shortcode( $atts ){
-return '<a href="javascript:window.print()" class="print-link">Print This Page</a>';
+return '<a href="javascript:window.print()" class="print-link btn btn-default">Print This Page</a>';
 }
 add_shortcode( 'print_button', 'print_button_shortcode' );
 // End Print Button
@@ -232,3 +232,7 @@ function my_login_logo_url_title() {
     return 'Your Site Name and Info';
 }
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+
+/********************************************Redirects**********************************/
+
